@@ -20,14 +20,19 @@
 ### Game Design
 
 #### Objective
-Tap the circles at the proper time in order to strike with brutal effectiveness and vanquish your foes!
+Journey through the dark depths of the ocean and defeat the creature that stalks you. An exploratory mission turned tragic, you are trapped beneath the waves, with a limited supply of air, and no communication with the outside world. No way out, and a creature prowling the depths around, how long can you last? A narrative experience of terror and dread. Think: underwater horror escape room.
 
 #### Gameplay Mechanics
-Targets will indicate the areas and time in which certain areas should be tapped for the most effective attacks. The more accurately you time your taps, the more effective the attacks. Missing or tapping too early results in a counterattack, in which the opponent can attack the player, causing damage to the player. Defeating enemies unlocks greater enemies and higher combat difficulties, simulated by increased speed and numbers of tap targets. Ideally, sound and music is incorporated so that audio-focused players can “feel” the rhythm with which they should be tapping.
+The player moves through the environment using a "swim jet", which propels them in the direction they point their hand by squeezing the trigger. The player attempts to hide behind obstacles and plants as a dark shape moves through the water around them. Audio queues will show the player that they are running low on oxygen, and vision will start to fade as oxygen gets low. Their only hope of survival is returning to the surface, but if they try to move before killing or scaring off the creature that hunts the depths, they will be eaten before they can escape.
 
 #### Level Design
-To start, there is one continuous level, with foes simply replacing their fallen comrades until the player falls to their onslaught. Outside of the MVP, the goal is to build several levels, on a map, where the player can choose to upgrade their abilities and skills, choose new levels, and progress throughout the world to harder and more powerful foes.
+A singular level. The bottom of the ocean, with a small ship far above. The player drops slowly into the ocean towards the ocean floor far below. After a few moments of exposition and setup, the player lands upon the floor of the ocean, and is taught how to move and use the controls. The air pump cuts off abruptly, and the character begins to hyperventilate. The oxygen percentage meter shows levels falling rapidly before the sounds of the pump begin again a few moments later. "Sorry about that! Keep calm and try not to panic if that happens. With all the air in that suit you should be able to spend several minutes without the pump before the air starts to get thin, and it only takes a few seconds to restart the pump, so you'll be fine," the voice calls over the comms. "Head that way " (a nav marker points the way) "to get to the dig site. Don't forget to grab your tools. With luck, we've got ourselves a chance to unearth some valuable artifacts before someone else notices the site. Still can't believe we found it after that earth quake. It's not every day you get a chance to crack open an ancient pyramid beneath the triangle. Superstitious idiots probably won't find it for weeks, but I'd rather get everything we can out of here before they do."
 
+Player picks up a tool chest of some kind and swims over to the marker. "Good. You're almost there. Keep going. Just a bit further down." Player keeps swimming and eventually sees the pyramid looming as a silhouette in the water. As they approach, a shape detaches itself from the top of the pyramid. "Did you see that? I've got something on the radar moving above you. Watch your head." A massive shape undulates through the water just around the player's oxygen tube. "Is that a whale or something? Hard to tell on this old piece ah shit. Doesn't matter, keep going. You're almost to the doorway we scouted out earlier with the drone. You should see the glow sticks we dropped to mark the entrance."
+
+As the player heads into the tunnel marked by the glow sticks, it grows too dark to see, with the entrance growing smaller behind them. Soon, a noise is heard in the water, as if a massive creature is screaming beneath the waves. "What the hell was that?! Did you see that thing?! Oh god! What is that thing?!" Gunshots ring out over the comms. Screams and cries of help. Static fills the channel and the creature screams again. The player watches as the ship sinks beneath the water, silhouettes of bodies and clouds of blood around it. A tentacle grabs ones of the bodies and drags it away. Their line goes slack. The pump is silent. The static stops.
+
+As the player fights their way to the surface, the creature can be seen snatching bodies and other flotsam around them. They have their swim jet and a single harpoon. Can they fight their way to the surface? Will they run out of air? Will they be eaten by the creature?
 [Back to top ^](#)
 
 ---
@@ -35,14 +40,11 @@ To start, there is one continuous level, with foes simply replacing their fallen
 ### Technical
 
 #### Scenes
-* Main Menu
-* Combat Screen
-* Map Screen
-* Shop Screen
+* Main Screen
 * ...
 
 #### Controls/Input
-Single finger tap on the tap obstacles. Touchscreen interface to shop and travel the map.  
+Pick up items with the grip button, and utilize those items with the trigger. Swim Jet can be used to propel yourself through the water. Harpoon gun can be shot. Spears can be used to stab. Oxygen tanks can be used to extend air supply.
 
 #### Classes/SKS
 * Classes
@@ -50,10 +52,7 @@ Single finger tap on the tap obstacles. Touchscreen interface to shop and travel
   * ...
 * Scenes
   * [list Scene files you will need to create]
-  * MainMenu
-  * Combat
-  * Shop
-  * Map
+  * NarrativeScene
 
 [Back to top ^](#)
 
@@ -61,14 +60,14 @@ Single finger tap on the tap obstacles. Touchscreen interface to shop and travel
 
 ### MVP Milestones
 [The overall milestones of first playable build, core gameplay, and polish are just suggestions, plan to finish earlier if possible. The last 20% of work tends to take about as much time as the first 80% so do not slack off on your milestones!]
-* Player can tap on the target to attack
-* Player can intuitively determine the positive and negative effects of tap timing
-* Player can see their health decrease as they miss or tap too early
-* Enemies will die after a certain amount of damage has been done
-* New enemies will spawn and run onto the screen when the Player has defeated an enemy
-* Score will be tracked to show the player how successful their run has been
-* Players will be able to upgrade various aspects (Damage, Health, Armor) of their character
-* Players will be able to track their high score
+* Player can move around in the environment in 3 dimensions using the swim jet.
+* Player can pick up and drop objects using the grip buttons
+* Player cannot drop the swim jet (automatically returns to belt)
+* Player can shoot the harpoon gun
+* Enemy swims around the environment
+* Player can hide from the enemy by blocking line of sight
+* Player can kill injure and scare off the enemy (temporarily) with the harpoon gun
+* Player can swim to the surface
 
 #### Week 1
 _MVP pre-setup_
